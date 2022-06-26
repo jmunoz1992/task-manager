@@ -10,15 +10,20 @@
 <body>
   <h1>Task Manager</h1>
   <br />
+  <h2>Insert Task Below</h2>
   <form action="#" method="POST" id="form">
-    <label for="task">Insert task here:</label><br />
     <input type="text" id="input-text"></input></br>
+    <input type="checkbox" id="urgent-check" name="urgent-check" value="Urgent">
+    <label for="urgent-check">Urgent</label><br />
+    <input type="checkbox" id="important-check" name="important-check" value="Important">
+    <label for="important-check">Important</label><br />
   </form>
   <br />
   <button id="submit-button">Submit</button>
   <br />
   <br />
   <h2>Current Tasks</h2>
+  <p>Priority Order: URGENT and IMPORTANT > URGENT > IMPORTANT > None Checked</p>
   <ul id="current-tasks">
   </ul>
 </body>
